@@ -1,0 +1,88 @@
+body {
+	background-color: $very-dark-blue;
+}
+
+.app-container {
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.app {
+		max-width: 1440px;
+		width: 100%;
+		display: grid;
+		grid-gap: 30px;
+		grid-template-columns: repeat(4, 1fr);
+
+		.person {
+			background-color: $blue;
+			border-radius: 20px;
+
+			&__wrap {
+				grid-column: 1 / 2;
+				background-color: $dark-blue;
+				border-radius: 20px;
+				overflow: hidden;
+			}
+
+			&__image {
+			}
+
+			&__overline {
+			}
+
+			&__headline {
+			}
+		}
+
+		.buttons {
+			&__single {
+			}
+		}
+
+		.task {
+			border-radius: 20px;
+			overflow: hidden;
+
+			&__wrap {
+				grid-column: 2 / 5;
+				display: grid;
+				grid-gap: 30px;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(2, 1fr);
+			}
+
+			&__content {
+				background-color: $dark-blue;
+				border-radius: 20px 20px 0 0;
+				// height: 100%;
+			}
+
+			&__image {
+				height: 50px;
+			}
+
+			&--orange {
+				background-color: $light-red-primary;
+			}
+			&--blue {
+				background-color: $soft-blue;
+			}
+			&--pink {
+				background-color: $light-red-secondary;
+			}
+			&--green {
+				background-color: $lime-green;
+			}
+			&--violet {
+				background-color: $violet;
+			}
+			&--yellow {
+				background-color: $soft-orange;
+			}
+		}
+	}
+}
