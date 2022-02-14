@@ -9,6 +9,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    color: white;
 
 	.app {
 		max-width: 1440px;
@@ -20,6 +21,7 @@ body {
 		.person {
 			background-color: $blue;
 			border-radius: 20px;
+            padding: 30px;
 
 			&__wrap {
 				grid-column: 1 / 2;
@@ -29,9 +31,19 @@ body {
 			}
 
 			&__image {
+                width: 80px;
+                height: 80px;
+                border: 3px solid white;
+                border-radius: 50%;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
 			}
 
 			&__overline {
+                margin-top: 40px;
 			}
 
 			&__headline {
@@ -58,11 +70,36 @@ body {
 			&__content {
 				background-color: $dark-blue;
 				border-radius: 20px 20px 0 0;
+                padding: 30px;
 				// height: 100%;
+
+                .task__headline{
+                    margin-bottom: 30px;
+                }
+
+                .task__hours{
+                    margin-bottom: 15px;
+                }
+
+                .task__subline{
+
+                }
+
+                .task__dots{
+
+                }
 			}
 
 			&__image {
-				height: 50px;
+				height: 45px;
+                overflow: hidden;
+
+                img{
+                    transform: translateY(-10px);
+                    margin-right: 20px;
+                    margin-left: auto;
+                    display: block;
+                }
 			}
 
 			&--orange {

@@ -1,115 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-<div class="app-container">
-  <div class="app">
-    <div class="person__wrap">
-      <div class="person">
-        <div class="person__image">
-          <img src="/images/image-jeremy.png" alt="Person">
-        </div>
-        <p class="person__overline">Report for</p>
-        <h2 class="person__headline">Jeremy Robson</h2>
-      </div>
-      <div class="buttons">
-        <button class="buttons__single">Daily</button>
-        <button class="buttons__single">Weekly</button>
-        <button class="buttons__single">Monthly</button>
-      </div>
-    </div>
-    <div class="task__wrap">
-      <div class="task task--orange">
-        <div class="task__image">
-          <img src="/images/icon-work.svg" alt="Person">
-        </div>
-        <div class="task__content">
-          <h3 class="task__headline">Work</h3>
-          <h1 class="task__hours">32hrs</h1>
-          <p class="task__subline">Last Week - 36hrs</p>
-          <div class="task__dots"></div>
-        </div>
-      </div>
-      <div class="task task--blue">
-        <div class="task__image">
-          <img src="/images/icon-play.svg" alt="Person">
-        </div>
-        <div class="task__content">
-          <h3 class="task__headline">Play</h3>
-          <h1 class="task__hours">10hrs</h1>
-          <p class="task__subline">Last Week - 8hrs</p>
-          <div class="task__dots"></div>
-        </div>
-      </div>
-      <div class="task task--pink">
-        <div class="task__image">
-          <img src="/images/icon-study.svg" alt="Person">
-        </div>
-        <div class="task__content">
-          <h3 class="task__headline">Study</h3>
-          <h1 class="task__hours">4hrs</h1>
-          <p class="task__subline">Last Week - 7hrs</p>
-          <div class="task__dots"></div>
-        </div>
-      </div>
-      <div class="task task--green">
-        <div class="task__image">
-          <img src="/images/icon-exercise.svg" alt="Person">
-        </div>
-        <div class="task__content">
-          <h3 class="task__headline">Exercise</h3>
-          <h1 class="task__hours">4hrs</h1>
-          <p class="task__subline">Last Week - 5hrs</p>
-          <div class="task__dots"></div>
-        </div>
-      </div>
-      <div class="task task--violet">
-        <div class="task__image">
-          <img src="/images/icon-social.svg" alt="Person">
-        </div>
-        <div class="task__content">
-          <h3 class="task__headline">Social</h3>
-          <h1 class="task__hours">5hrs</h1>
-          <p class="task__subline">Last Week - 10hrs</p>
-          <div class="task__dots"></div>
-        </div>
-      </div>
-      <div class="task task--yellow">
-        <div class="task__image">
-          <img src="/images/icon-self-care.svg" alt="Person">
-        </div>
-        <div class="task__content">
-          <h3 class="task__headline">Self Care</h3>
-          <h1 class="task__hours">2hrs</h1>
-          <p class="task__subline">Last Week - 2hrs</p>
-          <div class="task__dots"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+		<title>Frontend Mentor | Time tracking dashboard</title>
 
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="app-container">
+			<div class="app">
+				<div class="person__wrap">
+					<div class="person">
+						<div class="person__image">
+							<img src="/images/image-jeremy.png" alt="Person" />
+						</div>
+						<p class="person__overline">Report for</p>
+						<h2 class="person__headline">Jeremy Robson</h2>
+					</div>
+					<div class="buttons">
+						<button class="buttons__single">Daily</button>
+						<button class="buttons__single">Weekly</button>
+						<button class="buttons__single">Monthly</button>
+					</div>
+				</div>
+				<div class="task__wrap">
+					<div class="task task--orange">
+						<div class="task__image">
+							<img src="/images/icon-work.svg" alt="Person" />
+						</div>
+						<div class="task__content">
+							<h3 class="task__headline">Work</h3>
+							<h1 class="task__hours">32hrs</h1>
+							<p class="task__subline">Last Week - 36hrs</p>
+							<div class="task__dots"></div>
+						</div>
+					</div>
+					<div class="task task--blue">
+						<div class="task__image">
+							<img src="/images/icon-play.svg" alt="Person" />
+						</div>
+						<div class="task__content">
+							<h3 class="task__headline">Play</h3>
+							<h1 class="task__hours">10hrs</h1>
+							<p class="task__subline">Last Week - 8hrs</p>
+							<div class="task__dots"></div>
+						</div>
+					</div>
+					<div class="task task--pink">
+						<div class="task__image">
+							<img src="/images/icon-study.svg" alt="Person" />
+						</div>
+						<div class="task__content">
+							<h3 class="task__headline">Study</h3>
+							<h1 class="task__hours">4hrs</h1>
+							<p class="task__subline">Last Week - 7hrs</p>
+							<div class="task__dots"></div>
+						</div>
+					</div>
+					<div class="task task--green">
+						<div class="task__image">
+							<img src="/images/icon-exercise.svg" alt="Person" />
+						</div>
+						<div class="task__content">
+							<h3 class="task__headline">Exercise</h3>
+							<h1 class="task__hours">4hrs</h1>
+							<p class="task__subline">Last Week - 5hrs</p>
+							<div class="task__dots"></div>
+						</div>
+					</div>
+					<div class="task task--violet">
+						<div class="task__image">
+							<img src="/images/icon-social.svg" alt="Person" />
+						</div>
+						<div class="task__content">
+							<h3 class="task__headline">Social</h3>
+							<h1 class="task__hours">5hrs</h1>
+							<p class="task__subline">Last Week - 10hrs</p>
+							<div class="task__dots"></div>
+						</div>
+					</div>
+					<div class="task task--yellow">
+						<div class="task__image">
+							<img src="/images/icon-self-care.svg" alt="Person" />
+						</div>
+						<div class="task__content">
+							<h3 class="task__headline">Self Care</h3>
+							<h1 class="task__hours">2hrs</h1>
+							<p class="task__subline">Last Week - 2hrs</p>
+							<div class="task__dots"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  <script src="index.js"></script>
-</body>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+		<script src="index.js"></script>
+	</body>
 </html>

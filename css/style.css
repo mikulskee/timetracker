@@ -6,6 +6,12 @@
   box-sizing: inherit;
   scroll-behavior: smooth; }
 
+h1, p {
+  font-weight: 300; }
+
+h2, h3 {
+  font-weight: 400; }
+
 body {
   font-family: 'Rubik', sans-serif; }
 
@@ -18,7 +24,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: white; }
   .app-container .app {
     max-width: 1440px;
     width: 100%;
@@ -27,12 +34,23 @@ body {
     grid-template-columns: repeat(4, 1fr); }
     .app-container .app .person {
       background-color: #5847eb;
-      border-radius: 20px; }
+      border-radius: 20px;
+      padding: 30px; }
       .app-container .app .person__wrap {
         grid-column: 1 / 2;
         background-color: #1c1f4a;
         border-radius: 20px;
         overflow: hidden; }
+      .app-container .app .person__image {
+        width: 80px;
+        height: 80px;
+        border: 3px solid white;
+        border-radius: 50%; }
+        .app-container .app .person__image img {
+          width: 100%;
+          height: 100%; }
+      .app-container .app .person__overline {
+        margin-top: 40px; }
     .app-container .app .task {
       border-radius: 20px;
       overflow: hidden; }
@@ -44,9 +62,20 @@ body {
         grid-template-rows: repeat(2, 1fr); }
       .app-container .app .task__content {
         background-color: #1c1f4a;
-        border-radius: 20px 20px 0 0; }
+        border-radius: 20px 20px 0 0;
+        padding: 30px; }
+        .app-container .app .task__content .task__headline {
+          margin-bottom: 30px; }
+        .app-container .app .task__content .task__hours {
+          margin-bottom: 15px; }
       .app-container .app .task__image {
-        height: 50px; }
+        height: 45px;
+        overflow: hidden; }
+        .app-container .app .task__image img {
+          transform: translateY(-10px);
+          margin-right: 20px;
+          margin-left: auto;
+          display: block; }
       .app-container .app .task--orange {
         background-color: #ff8c66; }
       .app-container .app .task--blue {
