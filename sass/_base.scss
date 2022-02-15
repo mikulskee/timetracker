@@ -9,7 +9,7 @@ $soft-orange: hsl(43, 84%, 65%);
 $very-dark-blue: hsl(226, 43%, 10%);
 $dark-blue: hsl(235, 46%, 20%);
 $desaturated-blue: hsl(235, 45%, 61%);
-$pale-blue: hsl(236, 100%, 87%);
+$pale-blue: hsl(236, 100%, 87%); 
 
 $font-primary: 18px;
 
@@ -22,11 +22,19 @@ $font-primary: 18px;
     scroll-behavior: smooth;
 }
 
-h1, p{
+h1, p, h2{
     font-weight: 300;
 }
 
-h2, h3{
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 46px;
+}
+
+h3{
     font-weight: 400;
 }
 

@@ -9,11 +9,12 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    color: white;
+	color: white;
 
 	.app {
 		max-width: 1440px;
 		width: 100%;
+		padding: 0 170px;
 		display: grid;
 		grid-gap: 30px;
 		grid-template-columns: repeat(4, 1fr);
@@ -21,29 +22,33 @@ body {
 		.person {
 			background-color: $blue;
 			border-radius: 20px;
-            padding: 30px;
+			padding: 30px;
+			flex: 1;
 
 			&__wrap {
 				grid-column: 1 / 2;
 				background-color: $dark-blue;
 				border-radius: 20px;
 				overflow: hidden;
+				display: flex;
+				flex-direction: column;
 			}
 
 			&__image {
-                width: 80px;
-                height: 80px;
-                border: 3px solid white;
-                border-radius: 50%;
+				width: 80px;
+				height: 80px;
+				border: 3px solid white;
+				border-radius: 50%;
 
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
+				img {
+					width: 100%;
+					height: 100%;
+				}
 			}
 
 			&__overline {
-                margin-top: 40px;
+				margin-top: 40px;
+				color: $pale-blue;
 			}
 
 			&__headline {
@@ -51,7 +56,18 @@ body {
 		}
 
 		.buttons {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 30px 30px 0 30px;
+
 			&__single {
+				color: $pale-blue;
+				font-size: 18px;
+				border: none;
+				background-color: transparent;
+				font-weight: 300;
+				margin-bottom: 30px;
 			}
 		}
 
@@ -70,36 +86,35 @@ body {
 			&__content {
 				background-color: $dark-blue;
 				border-radius: 20px 20px 0 0;
-                padding: 30px;
+				padding: 30px;
 				// height: 100%;
 
-                .task__headline{
-                    margin-bottom: 30px;
-                }
+				.task__headline {
+					margin-bottom: 30px;
+				}
 
-                .task__hours{
-                    margin-bottom: 15px;
-                }
+				.task__hours {
+					margin-bottom: 15px;
+				}
 
-                .task__subline{
+				.task__subline {
+					color: $pale-blue;
+				}
 
-                }
-
-                .task__dots{
-
-                }
+				.task__dots {
+				}
 			}
 
 			&__image {
 				height: 45px;
-                overflow: hidden;
+				overflow: hidden;
 
-                img{
-                    transform: translateY(-10px);
-                    margin-right: 20px;
-                    margin-left: auto;
-                    display: block;
-                }
+				img {
+					transform: translateY(-10px);
+					margin-right: 20px;
+					margin-left: auto;
+					display: block;
+				}
 			}
 
 			&--orange {

@@ -6,10 +6,16 @@
   box-sizing: inherit;
   scroll-behavior: smooth; }
 
-h1, p {
+h1, p, h2 {
   font-weight: 300; }
 
-h2, h3 {
+h1 {
+  font-size: 64px; }
+
+h2 {
+  font-size: 46px; }
+
+h3 {
   font-weight: 400; }
 
 body {
@@ -29,18 +35,22 @@ body {
   .app-container .app {
     max-width: 1440px;
     width: 100%;
+    padding: 0 170px;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(4, 1fr); }
     .app-container .app .person {
       background-color: #5847eb;
       border-radius: 20px;
-      padding: 30px; }
+      padding: 30px;
+      flex: 1; }
       .app-container .app .person__wrap {
         grid-column: 1 / 2;
         background-color: #1c1f4a;
         border-radius: 20px;
-        overflow: hidden; }
+        overflow: hidden;
+        display: flex;
+        flex-direction: column; }
       .app-container .app .person__image {
         width: 80px;
         height: 80px;
@@ -50,7 +60,20 @@ body {
           width: 100%;
           height: 100%; }
       .app-container .app .person__overline {
-        margin-top: 40px; }
+        margin-top: 40px;
+        color: #bdc1ff; }
+    .app-container .app .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px 30px 0 30px; }
+      .app-container .app .buttons__single {
+        color: #bdc1ff;
+        font-size: 18px;
+        border: none;
+        background-color: transparent;
+        font-weight: 300;
+        margin-bottom: 30px; }
     .app-container .app .task {
       border-radius: 20px;
       overflow: hidden; }
@@ -68,6 +91,8 @@ body {
           margin-bottom: 30px; }
         .app-container .app .task__content .task__hours {
           margin-bottom: 15px; }
+        .app-container .app .task__content .task__subline {
+          color: #bdc1ff; }
       .app-container .app .task__image {
         height: 45px;
         overflow: hidden; }
