@@ -23,11 +23,19 @@ $font-primary: 18px;
 }
 
 h1,
-p {
+p,
+h2 {
   font-weight: 300;
 }
 
-h2,
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
 h3 {
   font-weight: 400;
 }
